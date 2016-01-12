@@ -19,6 +19,8 @@ Do not use HTML libraries/frameworks (such as HTML5 Boilerplate, Bootstrap, Foun
 
 You can use Modernizr and/or Selectivizr, along with a single JavaScript library such as jQuery if you wish, but you may not use any other plugins, libraries or frameworks (such as AngularJS).
 
+Preprocessors and build tools are permitted. See below.
+
 ----------
 
 Requirements and considerations
