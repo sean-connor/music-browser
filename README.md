@@ -19,7 +19,7 @@ Do not use HTML libraries/frameworks (such as HTML5 Boilerplate, Bootstrap, Foun
 
 You can use Modernizr and/or Selectivizr, along with a single JavaScript library such as jQuery if you wish, but you may not use any other plugins, libraries or frameworks (such as AngularJS).
 
-Preprocessors and build tools are permitted. See below.
+Preprocessors (LESS/SASS) and build tools (Grunt/Gulp) are permitted - see below.
 
 ----------
 
@@ -42,7 +42,7 @@ Ensure that your markup is semantic. For example, information follows a logical 
 
 ####	CSS (SASS)
 
-Ideally SASS should be used when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
+SASS is preferred when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
 
 ####	JavaScript
 
