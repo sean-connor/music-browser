@@ -71,7 +71,7 @@ The page should function and resemble the creative on the following operating sy
 
 #### Accessibility
 
-Ensure that your markup takes into account basic accessibility standards. For example, the page can be viewed and used without the need for JavaScript to be enabled and any alt attributes and similar are set.
+Ensure that your markup takes into account basic accessibility standards.
 
 ----------
 
