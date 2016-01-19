@@ -44,7 +44,7 @@ Ensure that your markup takes into account basic accessibility (WCAG 2.0) standa
 
 ####	CSS (SASS)
 
-SASS should be used when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
+SASS is preferred when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
 
 ####	JavaScript
 
