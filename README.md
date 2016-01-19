@@ -5,7 +5,7 @@ Music Browser
 
 This repository is intended to be used as both a skills assessment and a training tool. To begin, please fork this repository and complete the work detailed below in your local fork.
 
-In the repository you will find PSD's and supporting assets. You are expected to build the PSD using HTML, CSS3 (SASS), and JavaScript; accounting for desktop, as well as mobile and tablet devices.
+In the repository you will find PSD's and supporting assets. You are expected to build the PSD using HTML5, CSS3 (SASS), and JavaScript; accounting for desktop, as well as mobile and tablet devices.
 
 **General Notes:**
 
@@ -21,10 +21,14 @@ Please comment your HTML, CSS and JavaScript extensively. You are writing code t
 
 ----------
 
-Requirements and considerations
+Requirements
 -------
 
 You should build the page as you feel necessary, however the following should be taken into consideration:
+
+####	Design
+
+Your completed page should match the design as closely as possible. You should ensure your page is completely fluid, i.e. the page does not break when moving between mobile and desktop breakpoints.
 
 ####	Standards Compliance
 
@@ -40,7 +44,7 @@ Ensure that your markup takes into account basic accessibility (WCAG 2.0) standa
 
 ####	CSS (SASS)
 
-SASS is preferred when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
+SASS should be used when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
 
 ####	JavaScript
 
@@ -55,7 +59,7 @@ Note: If minifying your code, please ensure to also include the source files for
 
 ####	Browser Support
 
-The page should function and resemble the creative in all latest desktop/mobile browsers.
+The page should function and resemble the creative in all **latest** desktop/mobile browsers.
 
 ----------
 
