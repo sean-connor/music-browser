@@ -11,7 +11,7 @@ In the repository you will find PSD's and supporting assets. You are expected to
 
 Do not use HTML libraries/frameworks (such as HTML5 Boilerplate, Bootstrap, Foundation or any prebuilt grid systems).
 
-You can use Modernizr and/or Selectivizr, along with a single JavaScript library such as jQuery if you wish, but you may not use any other plugins, libraries or frameworks (such as AngularJS).
+You can use Modernizr and/or Selectivizr, but you may not use any other plugins, libraries or frameworks (such as jQuery or AngularJS).
 
 Preprocessors (LESS/SASS) and build tools (Grunt/Gulp) are permitted - see requirements below for more information.
 
@@ -29,6 +29,8 @@ You should build the page as you feel necessary, however the following should be
 ####	Design
 
 Your completed page should match the design as closely as possible. You should ensure your page is completely fluid, i.e. the page does not break when moving between mobile and desktop breakpoints.
+
+Note: The PSD's have been designed for Retina. Take that into consideration when building out your page.
 
 ####	Standards Compliance
 
