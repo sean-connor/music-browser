@@ -10,31 +10,31 @@ Music Browser is a fictional music discovery and news platform aimed at music en
 Instructions
 -------
 
-Music Browser has been designed as a training tool and a skills assessment that mimics a typical workflow.  The creative team has given us PSDs that they'd like to see implemented across mobile, tablet, and desktop breakpoints.  The assets you need have already been sliced.  All that you need to do is create the HTML5, CSS3 (SASS), and JavaScript to make the designs a reality.
+This repo is intended as a training tool and skills assessment that mimics a typical workflow. Provided are PSDs for mobile and desktop. You will be expected to use these to build a responsive page, utilizing HTML5, CSS3 (SASS) and JavaScript.
 
-To begin, please fork this repository.  Rename the "your-name" directory to your GitHub username.  Complete the exercise in this directory and commit your changes to your local fork.  When you are done, add a README.md that includes instructions on how to use your submission and what tools you chose to use.
+To begin, please fork this repository.  Rename the directory **your-name** to your GitHub username.  Complete the exercise in this directory and commit changes to your local fork. Once complete, fill out the README.md that exists in the same directory.
 
-To submit your work, please reach out to the person who gave you access to this repository.  Candidates, this will be the recruiter you are working with.
+To submit your work, please reach out to the person who gave you access to this repository - this will likely be the recruiter you are working with.
 
 Requirements
 -------
 
-1. You may use [Modernizr](https://github.com/Modernizr/Modernizr) or [Selectivizr](https://github.com/keithclark/selectivizr), but other libraries, frameworks, or plugins are strongly discouraged.
+1. You may use [Modernizr](http://modernizr.com) and/or [Selectivizr](http://selectivizr.com), but other libraries (jQuery), frameworks (Backbone.js/AngularJS), or plugins are **not permitted**.
 
-2. You are encouraged to use CSS Preprocessors like [Sass](http://sass-lang.com/) or [less](http://lesscss.org/), but discouraged from using prebuilt grid systems.
+2. You are encouraged to use CSS Preprocessors like [Sass](http://sass-lang.com/), but it is **not permitted** to use any prebuilt grid systems or frameworks (Bootstrap/Foundation).
 
-3.  You will be required to write JavaScript to allow for functionality changes between viewports (showing/hiding of content and/or navigation elements). Refer to the PSD's to determine where JS functionality is necessary.
+3. You will be required to write JavaScript to allow for functionality changes between viewports (showing/hiding of content and/or navigation elements). Refer to the PSD's to determine where JS functionality is necessary and implement where necessary.
 
-4. Please comment your HTML, CSS and JavaScript. You are writing code to be consumed by human beings who care about how you write code and how you think about solving engineering problems.
+4. Please comment your HTML, CSS and JavaScript where necessary.
 
 5. Write useful commit messages.
 
-Style Guide
+Considerations
 -------
 
 #### Design
 
-Your completed page should match the design as closely as possible. When complete, the page should be completely fluid, i.e. the page does not break when moving between mobile and desktop breakpoints.
+Your completed page should match the design as closely as possible. The page should be completely fluid, i.e. the page does not break when moving between mobile and desktop breakpoints.
 
 Take into consideration that the PSDs have been designed for retina displays.
 
@@ -52,7 +52,7 @@ Ensure that your markup takes into account basic accessibility (WCAG 2.0) standa
 
 #### CSS (SASS)
 
-SASS is preferred when writing your CSS, but if you feel more confident with less, please use it. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
+SASS is encouraged when writing your CSS. Try to demonstrate how preprocessors can be used in your development workflow to enforce DRY (Don't Repeat Yourself) principles.
 
 #### JavaScript
 
