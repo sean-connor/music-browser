@@ -15,7 +15,7 @@ In the repository you will find PSD's and supporting assets. You are expected to
 
 Do not use HTML libraries/frameworks (such as HTML5 Boilerplate, Bootstrap, Foundation or any prebuilt grid systems).
 
-You can use Modernizr and/or Selectivizr, but you may not use any other plugins, libraries or frameworks (such as jQuery or AngularJS).
+You can use Modernizr and/or Selectivizr, but you **may not** use any other plugins, libraries or frameworks (such as jQuery or AngularJS).
 
 Preprocessors (LESS/SASS) and build tools (Grunt/Gulp) are permitted - see requirements below for more information.
 
