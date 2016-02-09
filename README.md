@@ -1,7 +1,7 @@
 Music Browser
 =============
 
-** Summary: **
+**Summary:**
 
 Music Browser is a fictional music discovery and news platform aimed at music enthusiasts. The 'website' is intended to allow users to view articles on new music, discover emerging artists and view trending songs curated by users.
 
