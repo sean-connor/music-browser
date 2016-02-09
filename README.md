@@ -19,7 +19,7 @@ To submit your work, please reach out to the person who gave you access to this 
 Requirements
 -------
 
-1. You may use [https://github.com/Modernizr/Modernizr](Modernizr) or [https://github.com/keithclark/selectivizr](Selectivizr), but other libraries, frameworks, or plugins are strongly discouraged.
+1. You may use [Modernizr](https://github.com/Modernizr/Modernizr) or [Selectivizr](https://github.com/keithclark/selectivizr), but other libraries, frameworks, or plugins are strongly discouraged.
 
 2. You are encouraged to use CSS Preprocessors like [Sass](http://sass-lang.com/) or [less](http://lesscss.org/), but discouraged from using prebuilt grid systems.
 
