@@ -34,9 +34,9 @@ Considerations
 
 #### Design
 
-Your completed page should match the design as closely as possible. The page should be completely fluid, i.e. the page does not break when moving between mobile and desktop breakpoints.
+Your completed page should match the design as closely as possible. The page should be *completely fluid*, i.e. the page does not break when moving between mobile and desktop breakpoints.
 
-Take into consideration that the PSDs have been designed for retina displays.
+Take into consideration that the PSDs have been designed for retina displays and size your assets accordingly.
 
 #### Standards Compliance
 
