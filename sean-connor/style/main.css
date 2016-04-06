@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url('../fonts/sanfranciscodisplay-regular-webfont.ttf');
+}
+
+html{
+  color: white;
+  background-color: #222;
+  font-family: 'SanFrancisco';
+}
+body{
+  margin: 0;
+  height: 100%;
+}
+/*Main Wrapper Styling*/
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  text-align: center;
+}
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  margin: 0;
+}
+
+@media all and (min-width: 600px){
+  .aside {flex: 2 auto;
+          max-width: 100%}
+  .bulletin {max-width: 80%;
+             width: 100%;
+           }
+  .main{ width: 100%;
+         justify-content: center;}
+  .footer-list{
+    display: flex;
+
+  }
+}
+/*@media all and (min-width: 500px){
+  .aside {flex: 2 auto;
+          max-width: 100%}
+  .bulletin {max-width: 80%;
+             width: 100%;
+           }
+  .main{ width: 100%;
+         justify-content: center;}
+}*/
+@media all and (min-width: 400px){
+
+  .main{ width: 100%;
+         justify-content: center;}
+   .footer-list{
+     -webkit-flex-flow: column;
+     flex-flow: column;
+   }
+}
+.aside{
+  background: #333;
+}
+@media all and (min-width: 800px){
+  .main { flex:  1;
+          width: 66%;
+          justify-content: flex-end;
+        }
+  .aside {order: 2;
+          max-width: 34%;
+          background: #222;
+          justify-content: center;}
+  .main {order: 1;}
+  .footer{order: 3;}
+  .footer-list{
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+.nav{
+  background: #333;
+  box-shadow: 0 0 50px black;
+  margin: 0;
+  width: 100%;
+}
+.nav-list {
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  width: 34%;
+  left: 32%
+}
+.nav-item{
+  list-style: none;
+  font-size: 20px;
+}
+.search{
+  height: 16px;
+}
+
+
+.nav-item:hover{
+  list-style: none;
+  cursor: pointer;
+}
+.main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+
+  margin: 0;
+  background: #222;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.main > * {
+  flex: 1 auto;
+}
+.bulletin {
+  max-width: 40%;
+  min-width: 265px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.aside{
+  margin-top: 35px;
+}
+.song-group{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row;
+  flex-flow: row;
+
+  align-items: center;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: left;
+}
+.footer{
+  background-color: #222;
+
+  margin: 0;
+  font-size: 10px;
+}
+.footer-list{
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+
+  justify-content: space-around;
+  position: relative;
+  width: 50%;
+  left: 20%;
+  margin: 0;
+}
+/* Text Styling */
+.title{
+  display: block;
+  font-size: 20px;
+  text-align: left;
+}
+.title-songs{
+  margin-left: 40px;
+  margin-top: 32.6px;
+}
+a{
+  color: #0ae;
+  text-decoration: none;
+}
+.song-title, .bulletin-title:hover{
+  cursor: pointer;
+}
+.bulletin-cap{
+  font-size: 12px;
+  text-align:left;
+}
+.song-title, .song-caption{
+  height: 1em;
+  line-height: 1em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+.song-caption{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  width: 150px;
+}
+/* Image Styling */
+.img-circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.img-large{
+  width: 100%;
+  box-shadow: 0 0 50px black;
+}
+/* Main Body Styling */
+/*.main{
+  display: flex;
+}*/
