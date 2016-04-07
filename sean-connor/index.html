@@ -4,18 +4,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style/main.css" />
     <title>AKQA Music Browser</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
   </head>
-  <body class="wrapper">
+  <body>
+  <div class="wrapper">
     <nav class="nav">
+      <!-- <div class="navMenu">
+        <a class="expandMenu" href="#expandMenu">Menu</a>
+      </div> -->
       <ul class="nav-list">
+        <li class="navMenu">
+          <a href="javascript:void(0);" onclick="expandMenu()">&#9776;</a>
+        </li>
         <li class="nav-item">my music</li>
-        <li class="nav-item">playlists</li>
+        <li class="nav-item">playlist</li>
         <li class="nav-item">new</li>
         <li class="nav-item">explore</li>
-        <li class="nav-item-search">
-          <img class="search" src='./search.png'
-        </li>
       </ul>
+      <img class="search" src='./search.png'/>
     </nav>
       <section class="main">
         <figure class="bulletin">
@@ -41,6 +47,7 @@
       </section>
       <aside class="aside">
         <h2 class="title title-songs">Top Songs</h2>
+        <hr/>
         <figure class="song-group">
           <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894846/AKQA_Proj/justin_bieber_love_yourself.png'></img>
           <article>
@@ -86,7 +93,7 @@
         <figure class="song-group">
           <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894856/AKQA_Proj/rachel_platten_stand_by_you.png'></img>
           <article>
-            <h3 class="song-title">Stand By You</h3>
+            <h3 class="song-title"><a href="#">Stand By You</a></h3>
             <figcaption class="song-caption">Rachel Platten - Wildfire</figcaption>
           </article>
         </figure>
@@ -100,6 +107,9 @@
         <li class="footer-item"><a href="#">Sales and Refunds</a></li>
         <li class="footer-item"><a href="#">Site Map</a></li>
       </ul>
+    </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+
   </body>
 </html>
