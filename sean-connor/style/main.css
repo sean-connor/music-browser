@@ -10,8 +10,8 @@ html{
 }
 body{
   margin: 0;
-  height: 100%;
 }
+
 hr{
   display: block;
   height: 1px;
@@ -42,7 +42,7 @@ hr{
 @media all and (max-width: 799px){
   .aside {flex: 2 auto;
           max-width: 100%;
-          background: black;}
+          background: #111;}
   .bulletin {max-width: 80%;
              width: 100%;
            }
@@ -53,16 +53,30 @@ hr{
     flex-flow: column;
     display: flex;
     padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    left: 0%;
   }
   .nav{
     justify-content: space-between;
     padding: 10px;
+    -webkit-transition:height 5s ease-in;
+    -moz-transition:height 5s ease-in;
+    -o-transition:height 5s ease-in;
+    transition:height 5s ease-in;
   }
   .navMenu{
     display: block;
     position: relative;
+
   }
-  .nav-item {display: none;}
+
+  .nav-item {
+    display: none;
+
+  }
+
   ul.nav-list.display {
     flex-flow: column;
     justify-content: flex-start;
@@ -79,9 +93,14 @@ hr{
    float: none;
    display: inline;
  }
- ul.nav-list.display li a {
+ ul.nav-list.display li div {
    display: block;
    text-align: left;
+   transition: color ease-in-out 1s;
+
+ }
+ .menu-color{
+   color: #0ae;
  }
  .search{position: absolute;
          right: 10px;}
@@ -89,6 +108,9 @@ hr{
 
   .song-group{
     display: none;
+  }
+  .title-songs{
+    margin-left: 40px;
   }
   .song-arrow{
     display: block;
@@ -110,14 +132,20 @@ hr{
 }
 
 @media all and (min-width: 800px){
-  .main { order: 1;
-          flex:  1;
-          width: 66%;
-          justify-content: flex-end;
+  .main {
+        order: 1;
+        flex:  1;
+        width: 66%;
+        justify-content: flex-end;
         }
-  .aside {order: 2;
-          max-width: 34%;
-          justify-content: center;}
+  .aside {
+        order: 2;
+        max-width: 18%;
+        margin-left: 5%;
+        max-height: 545px;
+        margin-right: 10%;
+        justify-content: center;
+        }
 
   .footer{order: 3;}
   .footer-list{
@@ -135,25 +163,45 @@ hr{
   .nav-item {display: block;}
   .search {left: 2%;
            position: relative;}
+
+ hr{
+  position: relative;
+  right: 10%;
+ }
  .song-group{
    display: -webkit-box;
    display: -moz-box;
    display: -ms-flexbox;
    display: -webkit-flex;
    display: flex;
+
+   margin: 0;
+   padding-bottom: 100px;
  }
  .song-arrow{
    display: none;
  }
+ .footer-list{
+   width: 50%;
+   left: 20%;
+ }
 }
 /*Navigation Bar Styling*/
 .nav{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row;
+  flex-flow: row;
+
   background: #333;
   box-shadow: 0 0 50px black;
   margin: 0;
   width: 100%;
-  display: flex;
-  flex-flow: row;
+
   align-items: center;
   align-content: center;
   position: relative;
@@ -169,8 +217,10 @@ hr{
 
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+
   justify-content: space-between;
   align-items: center;
+
   position: relative;
   margin: 0;
   padding: 0;
@@ -180,15 +230,22 @@ hr{
 .nav-item{
   list-style: none;
   font-size: 20px;
+  -webkit-transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
+  transition: color .5s ease-out;
 }
+.nav-item:hover{
+  list-style: none;
+  cursor: pointer;
+  color: #0ae;
+}
+
 .search{
   height: 16px;
 }
 
-.nav-item:hover{
-  list-style: none;
-  cursor: pointer;
-}
+
 /*Main Body Styling*/
 .main {
   display: -webkit-box;
@@ -220,6 +277,17 @@ hr{
 /*Main Styling - Aside Top Songs*/
 .aside{
   margin-top: 35px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: column;
+  flex-flow: column;
+
+  justify-content: space-between;
+
 }
 .song-group{
 
@@ -227,9 +295,9 @@ hr{
   flex-flow: row;
 
   align-items: center;
-  font-weight: normal;
-  font-size: 12px;
+  font-size: 12.5px;
   text-align: left;
+  padding-bottom: 10px;
 }
 /*Footer Styling*/
 .footer{
@@ -252,8 +320,7 @@ hr{
   justify-content: space-around;
   position: absolute;
   top: calc(50% - 12.5px);
-  width: 50%;
-  left: 20%;
+
   margin: 0;
 }
 /* Text Styling */
@@ -263,8 +330,8 @@ hr{
   text-align: left;
 }
 .title-songs{
-  margin-left: 40px;
   margin-top: 32.6px;
+  margin-bottom: 0;
 }
 a{
   color: #0ae;
@@ -274,7 +341,7 @@ a{
   cursor: pointer;
 }
 .bulletin-cap{
-  font-size: 12px;
+  font-size: 1em;
   text-align:left;
 }
 .song-title, .song-caption{
@@ -297,8 +364,25 @@ a{
   width: 50px;
   height: 50px;
   border-radius: 25px;
+  transition: transform .2s ease-in-out;
+
+}
+.img-circle:hover{
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 0px 20px black) contrast(125%);
+  filter: drop-shadow(0px 0px 20px black) contrast(125%);
+  transform: rotate(1);
 }
 .img-large{
   width: 100%;
   box-shadow: 0 0 50px black;
+  transition: transform .2s ease-in-out;
+  overflow: hidden;
+}
+.img-large:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.bulletin-title:hover ~ .img-large{
+  transform: scale(1.03);
 }
