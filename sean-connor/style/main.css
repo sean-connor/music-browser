@@ -39,7 +39,7 @@ hr{
   margin: 0;
 }
 /*Screen Specific Styling*/
-@media all and (max-width: 600px){
+@media all and (max-width: 799px){
   .aside {flex: 2 auto;
           max-width: 100%;
           background: black;}
@@ -54,15 +54,21 @@ hr{
     display: flex;
     padding: 20px;
   }
+  .nav{
+    justify-content: space-between;
+    padding: 10px;
+  }
   .navMenu{
     display: block;
+    position: relative;
   }
   .nav-item {display: none;}
   ul.nav-list.display {
     flex-flow: column;
     justify-content: flex-start;
-    position: absolute;
+    position: relative;
     left: 0;
+    align-items: flex-start;
   }
   ul.nav-list.display li.icon {
    position: absolute;
@@ -77,40 +83,68 @@ hr{
    display: block;
    text-align: left;
  }
-}
+ .search{position: absolute;
+         right: 10px;}
 
-@media all and (min-width: 400px){
 
-  .main{ width: 100%;
-         justify-content: center;
-        background: #333;}
-   .footer-list{
-     -webkit-flex-flow: column;
-     flex-flow: column;
-   }
-   .nav-item {display: none;}
-
+  .song-group{
+    display: none;
+  }
+  .song-arrow{
+    display: block;
+  }
+  .top-3{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .song-display{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
 }
 
 @media all and (min-width: 800px){
-  .main { flex:  1;
+  .main { order: 1;
+          flex:  1;
           width: 66%;
           justify-content: flex-end;
         }
   .aside {order: 2;
           max-width: 34%;
           justify-content: center;}
-  .main {order: 1;}
+
   .footer{order: 3;}
   .footer-list{
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
+
+  .nav{
+  justify-content: center;
+  }
+
   .navMenu{
     display: none;
   }
   .nav-item {display: block;}
-
+  .search {left: 2%;
+           position: relative;}
+ .song-group{
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+ }
+ .song-arrow{
+   display: none;
+ }
 }
 /*Navigation Bar Styling*/
 .nav{
@@ -122,7 +156,6 @@ hr{
   flex-flow: row;
   align-items: center;
   align-content: center;
-  justify-content: center;
   position: relative;
 }
 .nav-list {
@@ -138,7 +171,9 @@ hr{
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   margin: 0;
+  padding: 0;
   width: 34%;
 
 }
@@ -148,8 +183,6 @@ hr{
 }
 .search{
   height: 16px;
-  left: 2%;
-  position: relative;
 }
 
 .nav-item:hover{
@@ -189,11 +222,6 @@ hr{
   margin-top: 35px;
 }
 .song-group{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
 
   -webkit-flex-flow: row;
   flex-flow: row;
