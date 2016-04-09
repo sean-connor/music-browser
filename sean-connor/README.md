@@ -1,9 +1,9 @@
-Name:
+Name: Sean Connor
 
-Tools used:
+Tools used: HTML5 / CSS3 / SASS / JavaScript
 
-Editor used:
+Editor used: Atom
 
-Time taken:
+Time taken: ~ 12 hours
 
-Additional comments (optional):
+Additional comments (optional): This was a pleasure to work on, enjoyed it.
