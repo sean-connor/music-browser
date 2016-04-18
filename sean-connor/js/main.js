@@ -38,7 +38,7 @@ function playSong(event) {
     audio.play()
     target.innerHTML  = "&#10073;&#10073";
     if(title === "Sorry"){
-      alert("No more J-biebs, enjoy Ophelia - The Lumineers. This was a fun project, look forward to hearing back AKQA!");
+      alert("Just kidding, no more J-biebs, enjoy Ophelia - The Lumineers.");
     }
   } else {
     audio.pause()
