@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <title>AKQA Music Browser</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  </head>
+  <body>
+  <div class="wrapper">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="navMenu">
+          <div href="javascript:void(0);" onclick="expandMenu(event)">&#9776;</div>
+        </li>
+        <li class="nav-item">my music</li>
+        <li class="nav-item">playlist</li>
+        <li class="nav-item">new</li>
+        <li class="nav-item">explore</li>
+      </ul>
+      <div class="search-items">
+        <img class="search" src='./search.png'/>
+        <input class="search-bar" type="search" name="name" value="">
+      </div>
+    </nav>
+      <section class="main">
+        <figure class="bulletin">
+          <h1 class="title bulletin-title"><a href="#">New and Noteworthy</a></h1>
+          <img class="img-large" src='http://res.cloudinary.com/roomieup-com/image/upload/c_crop,g_south,h_285,w_600/v1459894847/AKQA_Proj/noteworthy.png'/>
+          <figcaption class="bulletin-cap">Kicking off 2016 with these new hit tracks</figcaption>
+        </figure>
+        <figure class="bulletin">
+          <h1 class="title bulletin-title"><a href="#">Pre-Order New Music</a></h1>
+          <img class="img-large" src='http://res.cloudinary.com/roomieup-com/image/upload/c_crop,g_south,h_285,w_600/v1459894847/AKQA_Proj/preorder.png'></img>
+          <figcaption class="bulletin-cap">Available February and March 2016</figcaption>
+        </figure>
+        <figure class="bulletin">
+          <h1 class="title bulletin-title"><a href="#">Best of 2015</a></h1>
+          <img class="img-large" src='http://res.cloudinary.com/roomieup-com/image/upload/c_crop,g_south,h_285,w_600/v1459894852/AKQA_Proj/best_of_2015.png'></img>
+          <figcaption class="bulletin-cap">Rewind last year's best hits</figcaption>
+        </figure>
+        <figure class="bulletin">
+          <h1 class="title bulletin-title"><a href="#">New Artist Spotlight</a></h1>
+          <img class="img-large" src='http://res.cloudinary.com/roomieup-com/image/upload/c_crop,g_south,h_285,w_600/v1459894847/AKQA_Proj/newest_hits.png'></img>
+          <figcaption class="bulletin-cap">Hear some of the newest hits of January 2016</figcaption>
+        </figure>
+      </section>
+      <aside class="aside">
+        <audio id="audio" href="javascript:void(0);" src="" style="font-size:30px;"></audio>
+        <h2 class="title title-songs">Top Songs</h2>
+        <hr/>
+        <figure class="song-group top-3">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894846/AKQA_Proj/justin_bieber_love_yourself.png' onclick="playSong(event)"></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Love Yourself</a></h3>
+            <figcaption class="song-caption">Justin Bieber - Purpose(Deluxe Edition)</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group top-3">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894852/AKQA_Proj/adele_hello.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Hello</a></h3>
+            <figcaption class="song-caption">Adele - 25</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group top-3">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894846/AKQA_Proj/justin_bieber_love_yourself.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Sorry</a></h3>
+            <figcaption class="song-caption">Justin Bieber - Purpose(Deluxe Edition)</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894856/AKQA_Proj/twenty_one_pilots_stressed_out.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Stressed Out</a></h3>
+            <figcaption class="song-caption">twenty one pilots - Blurryface</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894851/AKQA_Proj/chainsmokers_roses.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Roses (feat. ROZES)</a></h3>
+            <figcaption class="song-caption">The ChainSmokers - Bouquet</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894856/AKQA_Proj/selene_gomez_same_cold_love.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Same Old Love</a></h3>
+            <figcaption class="song-caption">Selena Gomez - Revival(Deluxe Edition)</figcaption>
+          </article>
+        </figure>
+        <figure class="song-group">
+          <img class="img-circle" src='http://res.cloudinary.com/roomieup-com/image/upload/v1459894856/AKQA_Proj/rachel_platten_stand_by_you.png'></img>
+          <a class="song-button" href="javascript:void(0);" style="font-size:30px;"onclick="playSong(event)">▶</a>
+          <article>
+            <h3 class="song-title"><a href="#">Stand By You</a></h3>
+            <figcaption class="song-caption">Rachel Platten - Wildfire</figcaption>
+          </article>
+        </figure>
+          <a class="song-arrow" href="javascript:void(0);" style="font-size:30px;"onclick="expandSongs(event)">∨</a>
+      </aside>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-item">Copyright &#169 2016, All rights reserved.</li>
+        <li class="footer-item"><a href="#">Contact Us</a></li>
+        <li class="footer-item"><a href="#">Privacy & cookies</a></li>
+        <li class="footer-item"><a href="#">Terms of Use</a></li>
+        <li class="footer-item"><a href="#">Sales and Refunds</a></li>
+        <li class="footer-item"><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
